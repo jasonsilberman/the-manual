@@ -47,10 +47,7 @@ git config --global commit.gpgsign true
 git config --global gpg.program gpg
 ```
 
-Then you can edit `nano ~/.gnupg/gpg.conf` to add the following:
-```
-no-tty
-```
+*NOTE: Git's config for `user.email` must match the GPG key. To change the email do this: `git config --global user.email EMAIL_ADDRESS`.*
 
 And edit `nano ~/.gnupg/gpg-agent.conf` to add this:
 ```
