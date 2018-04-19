@@ -31,12 +31,46 @@ gpg --list-secret-keys --keyid-format LONG
 ```
 The key ID is right after `sec rsa4096/KEYID_IS_HERE`.
 
-## 3. Add Key to GitHub account
+## Or Transfer a Previous Key
+If you have already created a GPG key and want to transfer it to a new machine, [we can also do that](https://www.phildev.net/pgp/gpg_moving_keys.html).
+
+First you must export the previous keys on the old machine:
+```
+gpg --export-secret-keys -a keyid > my_private_key.asc
+gpg --export -a keyid > my_public_key.asc
+```
+
+After the keys have been exported you can transfer them to the new machine using [`scp`](https://research.csc.fi/csc-guide-copying-files-from-linux-and-mac-osx-machines-with-scp):
+```
+scp my_private_key.asc username@IP_ADDRESS:
+scp my_public_key.asc username@IP_ADDRESS:
+```
+
+*NOTE: By default the new files will be in user's home directory.*
+
+Once the keys have been transferred to the new machine, we have to import them:
+```
+gpg --import my_private_key.asc
+gpg --import my_public_key.asc
+```
+
+Finally, we have to trust the keys on the new machine:
+```
+gpg --edit-key EMAIL_ADDRESS
+```
+
 You can export your key like this:
 ```
 gpg --armor --export KEYID_IS_HERE
 ```
 
+And then type the `trust` command and follow the prompts.
+
+*NOTE: For your own keys `5 (Ultimate)` is okay, but otherwise do not ultimately trust anybody else's keys.*
+
+Once this is done, make sure to properly dispoe of the exported keys on both machines.
+
+## 3. Add Key to GitHub account
 Once you copy the output, you can [add it to your GitHub account](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
 
 ## 4. Setup Git to Use GPG Key
@@ -59,6 +93,8 @@ Now, whenever you commit some code, simply tack on the `-S` flag like so:
 ```
 git commit -S -m "this commit is now signed!"
 ```
+
+*NOTE: The first time you commit with the new key you will be asked for the key's passphrase.*
 
 ## Troubleshooting
 If Git is failing to sign commits, try restarting the `gpg-agent`:
