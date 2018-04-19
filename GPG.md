@@ -45,8 +45,8 @@ After the keys have been exported you can transfer them to the new machine using
 scp my_private_key.asc username@IP_ADDRESS:
 scp my_public_key.asc username@IP_ADDRESS:
 ```
-
-*NOTE: By default the new files will be in user's home directory.*
+*NOTE1: The new machine must have `ssh` enabled.*
+*NOTE2: By default the new files will be in user's home directory.*
 
 Once the keys have been transferred to the new machine, we have to import them:
 ```
