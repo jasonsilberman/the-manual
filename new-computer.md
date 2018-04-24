@@ -5,7 +5,7 @@ Also, see [Casey’s list](https://www.caseyliss.com/2016/7/2/new-mac-who-dis) o
 
 Next time I setup my computer, I should make sure to follow this list, and update it accordingly.
 
-## Old Computer TODOs
+## Old Computer
 
  - Remove Dropbox
  - Disassociate the computer with the iTunes Store
@@ -15,7 +15,7 @@ Next time I setup my computer, I should make sure to follow this list, and updat
  - Remove the Mac from my support profile
  - If desired, reinstall macOS as per Apple’s instructions
 
-## New Computer TODOS
+## New Computer
 
  - Generate private/public keys and add to Github
  - Setup Time Machine
