@@ -53,7 +53,6 @@ These applications are for design and photography work.
  - Install Final Cut Pro
  - Install Timelapse Assembler
  - Install Sip
- 
  - Install Sketch Runner
 
 ### Development
@@ -64,7 +63,6 @@ These applications or tools are used for development.
  - Install Paw (deactivate, and then reactivate)
  - Install PaintCode (deactivate, and then reactivate)
  - Install Realm Studio
-
  - Install oh-my-zsh
  - Install Homebrew
  - Install Ruby
@@ -88,5 +86,4 @@ These applications or tools are used for development.
 
 - Install development fonts ([Fira Sans & Mono](https://github.com/mozilla/Fira), [Fira Code](https://github.com/tonsky/FiraCode), [SF Mono](https://medium.com/@shashikant.jagtap/getting-apples-sf-mono-font-in-macos-1de5183add84))
 - Install Xcode theme ([One Dark](https://github.com/bojan/xcode-one-dark))
-
 - Download Apple iOS UI library for Sketch.
