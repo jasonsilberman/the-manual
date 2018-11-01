@@ -14,6 +14,7 @@
 
 ## Adapters
 Different parts of Europe have different adapters. Even the countries that use the `<•  •>` style plugs differ on how they ground them. Here is a helpful chart:
+
 ![https://wikitravel.org/upload/shared//8/85/Plugs.png](https://wikitravel.org/upload/shared//8/85/Plugs.png)
 
 Most of the `C`, `E`, `F` plugs will work interchangably for non grounded plugs.
