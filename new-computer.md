@@ -67,6 +67,7 @@ These applications or tools are used for development.
  - Install Homebrew
  - Install Ruby
  - Install rubygems
+ - Install rbenv
  - Install fastlane
  - Install node
  - Install npm
