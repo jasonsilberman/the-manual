@@ -1,4 +1,4 @@
-export ZSH=/Users/jason/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="synergy"
 
@@ -17,7 +17,7 @@ alias wrk='cd ~/WORK/'
 eval "$(rbenv init -)"
 
 
-export VOLTA_HOME="/Users/jason/.volta"
+export VOLTA_HOME="$HOME/.volta"
 grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
 
 export PATH=${PATH}:$HOME/gsutil
