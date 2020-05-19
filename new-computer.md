@@ -55,7 +55,7 @@ These applications or tools are used for development.
  - Install VS Code
  - Install Xcode
  - Install Paw (deactivate, and then reactivate)
- - Install oh-my-zsh
+ - Install oh-my-zsh (and [gitstatus](https://github.com/romkatv/gitstatus))
  - Install Homebrew
  - Install rbenv
  - Install Ruby
