@@ -17,8 +17,8 @@ Next time I setup my computer, I should make sure to follow this list, and updat
 
 ## New Computer
 
- - Generate private/public keys and add to Github
- - Generate [GPG keys](https://github.com/jasonsilberman/the-manual/blob/master/coding/GPG.md)
+ - Generate private/public [SSH Keys](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and add to Github
+ - Generate [GPG keys](/setup/GPG.md)
  - Setup Time Machine
  - Setup Mail
  - Setup Messages (originate from phone #)
