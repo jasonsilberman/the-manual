@@ -55,7 +55,7 @@ These applications or tools are used for development.
  - Install VS Code
  - Install Xcode
  - Install Paw (deactivate, and then reactivate)
- - Install oh-my-zsh (and [gitstatus](https://github.com/romkatv/gitstatus))
+ - Install oh-my-zsh
  - Install Homebrew
  - Install rbenv
  - Install Ruby
@@ -69,6 +69,7 @@ These applications or tools are used for development.
 ## File Transfers
 
  - Copy over ~/.zshrc and ~/.oh-my-zsh
+   - *NOTE: You can also install zsh plugins separetely (zsh-autosuggestions and gitstatus)*
  - Xcode certs (using fastlane match)
  - ~/Desktop
  - ~/Documents (not Adobe)
@@ -81,3 +82,5 @@ These applications or tools are used for development.
 - Install development fonts ([Fira Sans & Mono](https://github.com/mozilla/Fira), [Fira Code](https://github.com/tonsky/FiraCode), [SF Mono](https://medium.com/@shashikant.jagtap/getting-apples-sf-mono-font-in-macos-1de5183add84))
 - Install Xcode theme ([One Dark](https://github.com/bojan/xcode-one-dark))
 - Install [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) for VS Code.
+- Install Solarized Dark from this folder
+- Look at other files in this folder and copy over as necessary.
