@@ -8,13 +8,13 @@ This is a doc on how to sign commits with GPG. Look at the following links:
 
 ## 1. Install GPG CLI
 First you have to install the necessary things with homebrew.
-```
+```sh
 brew install gnupg gnupg2 pinentry-mac
 ```
 
 ## 2. Generate a new GPG Key
 Once you have the CLI installed, you can [generate your new GPG Key](https://help.github.com/articles/generating-a-new-gpg-key/#generating-a-gpg-key).
-```
+```sh
 gpg --full-generate-key
 ```
 
@@ -26,7 +26,7 @@ gpg --full-generate-key
 - Type a secure passphrase.
 
 You can then find the key ID be executing the following command:
-```
+```sh
 gpg --list-secret-keys --keyid-format LONG
 ```
 The key ID is right after `sec rsa4096/KEYID_IS_HERE`.
@@ -35,13 +35,13 @@ The key ID is right after `sec rsa4096/KEYID_IS_HERE`.
 If you have already created a GPG key and want to transfer it to a new machine, [we can also do that](https://www.phildev.net/pgp/gpg_moving_keys.html).
 
 First you must export the previous keys on the old machine:
-```
+```sh
 gpg --export-secret-keys -a keyid > my_private_key.asc
 gpg --export -a keyid > my_public_key.asc
 ```
 
 After the keys have been exported you can transfer them to the new machine using [`scp`](https://research.csc.fi/csc-guide-copying-files-from-linux-and-mac-osx-machines-with-scp):
-```
+```sh
 scp my_private_key.asc username@IP_ADDRESS:
 scp my_public_key.asc username@IP_ADDRESS:
 ```
@@ -49,19 +49,19 @@ scp my_public_key.asc username@IP_ADDRESS:
 *NOTE2: By default the new files will be in user's home directory.*
 
 Once the keys have been transferred to the new machine, we have to import them:
-```
+```sh
 gpg --import my_private_key.asc
 gpg --import my_public_key.asc
 ```
 
 Finally, we have to trust the keys on the new machine:
-```
+```sh
 gpg --edit-key EMAIL_ADDRESS
 ```
 
 You can export your key like this:
-```
-gpg --armor --export KEYID_IS_HERE
+```sh
+gpg --armor --export KEY_ID_HERE
 ```
 
 And then type the `trust` command and follow the prompts.
@@ -73,9 +73,14 @@ Once this is done, make sure to properly dispoe of the exported keys on both mac
 ## 3. Add Key to GitHub account
 Once you copy the output, you can [add it to your GitHub account](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
 
+You can export the key with the following command:
+```sh
+gpg --armor --export KEY_ID_HERE
+```
+
 ## 4. Setup Git to Use GPG Key
 Now you have to tell Git about your GPG key:
-```
+```sh
 git config --global user.signingkey KEYID_IS_HERE
 git config --global commit.gpgsign true
 git config --global gpg.program gpg
@@ -84,13 +89,13 @@ git config --global gpg.program gpg
 *NOTE: Git's config for `user.email` must match the GPG key. To change the email do this: `git config --global user.email EMAIL_ADDRESS`.*
 
 And edit `nano ~/.gnupg/gpg-agent.conf` to add this:
-```
+```sh
 pinentry-program /usr/local/bin/pinentry-mac
 ```
 
 ## 5. Signing Git Commits
 Now, whenever you commit some code, simply tack on the `-S` flag like so:
-```
+```sh
 git commit -S -m "this commit is now signed!"
 ```
 
@@ -98,7 +103,7 @@ git commit -S -m "this commit is now signed!"
 
 ## Troubleshooting
 If Git is failing to sign commits, try restarting the `gpg-agent`:
-```
+```sh
 killall gpg-agent
 gpg-agent --daemon
 ```
