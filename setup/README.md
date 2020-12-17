@@ -7,7 +7,6 @@ Next time I setup my computer, I should make sure to follow this list, and updat
 
 ## Old Computer
 
- - Remove Dropbox
  - Disassociate the computer with the iTunes Store
  - Disassociate the computer with the Mac App Store
  - Disassociate the computer with iMessage in Messages.app
@@ -29,6 +28,8 @@ Next time I setup my computer, I should make sure to follow this list, and updat
 These applications are used for everyday activities.
 
  - Install 1Password
+ - Install Tot
+ - Install HEY
  - Install Things
  - Install RescueTime
  - Install iStat Menus (deactivate, and then reactivate)
@@ -38,15 +39,19 @@ These applications are used for everyday activities.
  - Install Soulver
  - Install Better Blocker
  - Install Tunnelbear
+ - Install Slack
+ - Install Zoom
+ - Install Linear
+ - Install Notion
+ - Install CleanShot X
 
 ### Design & Photography
 These applications are for design and photography work.
 
  - Install Adobe CC (Lightroom, Photoshop)
- - Install Sketch
  - Install Figma
- - Install Final Cut Pro
- - Install Timelapse Assembler
+ - Install Final Cut Pro (?)
+ - Install Timelapse Assembler (?)
  - Install Sip
 
 ### Development
@@ -65,6 +70,10 @@ These applications or tools are used for development.
  - Install node
  - Install yarn
  - Install Vercel
+ - Install Postgres
+ - Install Postico
+ - Install MongoDB Compass
+ - Install Sim Genie
 
 ## File Transfers
 
