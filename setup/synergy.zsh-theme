@@ -1,4 +1,4 @@
-source $ZSH_CUSTOM/gitstatus/gitstatus.plugin.zsh
+source $ZSH_CUSTOM/plugins/gitstatus/gitstatus.plugin.zsh
 
 # Sets GITSTATUS_PROMPT to reflect the state of the current git repository (empty if not
 # in a git repository).
