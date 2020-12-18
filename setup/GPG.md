@@ -6,6 +6,8 @@ This is a doc on how to sign commits with GPG. Look at the following links:
 2. https://stackoverflow.com/a/47087248/1740273
 3. https://stackoverflow.com/a/44303808/1740273 (`killall gpg-agent` and then `gpg-agent --daemon`)
 
+You can also use GPGTools to create the key (https://gpgtools.org) and skip to #3.
+
 ## 1. Install GPG CLI
 First you have to install the necessary things with homebrew.
 ```sh
