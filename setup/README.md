@@ -97,7 +97,7 @@ git clone --depth=1 https://github.com/romkatv/gitstatus.git ${ZSH_CUSTOM:-~/.oh
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-- Install development fonts ([Fira Sans & Mono](https://github.com/mozilla/Fira), [Fira Code](https://github.com/tonsky/FiraCode), [SF Mono](https://medium.com/@shashikant.jagtap/getting-apples-sf-mono-font-in-macos-1de5183add84))
+- Install development fonts ([Fira Code](https://github.com/tonsky/FiraCode))
 - Install Xcode theme ([One Dark](https://github.com/bojan/xcode-one-dark))
 - Install [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) for VS Code.
 - Install Solarized Dark from this folder
