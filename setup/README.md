@@ -44,6 +44,7 @@ These applications are used for everyday activities.
  - Install Linear
  - Install Notion
  - Install CleanShot X
+ - Install Spark
 
 ### Design & Photography
 These applications are for design and photography work.
