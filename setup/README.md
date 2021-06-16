@@ -102,3 +102,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 - Install [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) for VS Code.
 - Install Solarized Dark from this folder
 - Look at other files in this folder and copy over as necessary.
+
+Setup these Git Defaults:
+```sh
+git config --global pull.rebase true
+git config --global fetch.prune true
+git config --global diff.colorMoved zebra
+```
